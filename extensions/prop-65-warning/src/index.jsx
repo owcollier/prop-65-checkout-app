@@ -6,7 +6,8 @@ import {
   useTranslate,
 } from '@shopify/checkout-ui-extensions-react';
 
-render('Checkout::Dynamic::Render', () => <App />);
+render("Checkout::Dynamic::Render", () => <App />);
+render("Checkout::DeliveryAddress::RenderBefore", () => <App />);
 
 function App() {
   const {extensionPoint} = useExtensionApi();
